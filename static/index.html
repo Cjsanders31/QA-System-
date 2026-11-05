@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Papertrail | PDF intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar"><a class="brand" href="/"><span class="brand-mark">P</span><span>papertrail</span></a><div class="status"><span class="status-dot"></span><span id="statusText">Index warming up</span></div></header>
+      <section class="hero"><p class="eyebrow">PRIVATE PDF INTELLIGENCE</p><h1>Ask the stack.<br /><em>Find the signal.</em></h1><p class="lede">A focused reading room for your research library. Upload PDFs, ask a sharp question, and follow every answer back to the page.</p></section>
+      <section class="workspace">
+        <div class="ask-panel"><form id="askForm"><label for="query">Your question</label><textarea id="query" rows="3" placeholder="What are the main risks leaders see in enterprise AI adoption?" autofocus></textarea><div class="form-footer"><span class="hint">Enter to ask · Shift + Enter for a new line</span><button type="submit">Search papers <span>↗</span></button></div></form><div class="suggestions"><button data-question="What themes appear across these reports?">Cross-document themes</button><button data-question="What are the biggest risks discussed?">Biggest risks</button><button data-question="Which findings are most actionable?">Actionable findings</button></div></div>
+        <aside class="library-panel"><div class="panel-heading"><span>LIBRARY</span><span id="docCount">0 PDFs</span></div><div id="library" class="library-list"></div><label class="upload"><span>＋</span> Add PDFs<input id="fileInput" type="file" accept="application/pdf" multiple /></label></aside>
+      </section>
+      <section id="answerSection" class="answer-section hidden"><div class="answer-heading"><span class="eyebrow">SYNTHESIS</span><span id="resultMeta"></span></div><div id="answer" class="answer"></div><div class="sources-heading">PASSAGES USED</div><div id="sources" class="sources"></div></section>
+      <footer><span>LOCAL-FIRST RESEARCH TOOL</span><span>TF-IDF RETRIEVAL · PAGE-AWARE SOURCES</span></footer>
+    </main>
+    <script src="/static/app.js"></script>
+  </body>
+</html>
